@@ -1,4 +1,4 @@
-# XXXXX Social
+# Superstate Social
 
 ## Requirements
 
@@ -16,7 +16,7 @@ Simply install using npm: `npm install -g pnpm`
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/XXXXX/social.git
+git clone https://github.com/Superstate/social.git
 ```
 
 ### Install NVM and pnpm
