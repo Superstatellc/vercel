@@ -17,7 +17,7 @@
     "@biomejs/biome": "^2.3.10",
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
-    "@hookform/resolvers": "5.2.2",
+    "@hookform/resolvers": "5.9.1",
     "@lens-chain/sdk": "^1.0.3",
     "@lens-chain/storage-client": "^1.0.6",
     "@lens-protocol/metadata": "^2.1.0",
