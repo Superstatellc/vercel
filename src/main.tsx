@@ -57,11 +57,10 @@ const App = () => {
                   className="font-semibold text-[22px]"
                   id="activation-dialog-title"
                 >
-                  Secure access
+                  Activate your IP
                 </h1>
                 <p className="mt-2 text-base text-gray-500 dark:text-gray-400">
-                  Enter the secure access code issued to you by an authorized
-                  administrator.
+                  Enter the activation code issued to you by <br/>the administrator.
                 </p>
                 <form
                   className="mt-6 flex flex-col gap-4 text-left"
@@ -71,7 +70,7 @@ const App = () => {
                     aria-label="Activation code"
                     label="Activation code"
                     onChange={(event) => setActivationCode(event.target.value)}
-                    placeholder="Enter your secure access code"
+                    placeholder="Enter the code"
                     required
                     value={activationCode}
                   />
@@ -95,8 +94,8 @@ const App = () => {
                   Restricted access
                 </h1>
                 <p className="mt-3 text-base text-gray-500 leading-6 dark:text-gray-400">
-                  This workspace is available to authorized users only. Please
-                  contact your administrator to request an access code.
+                  Your IP is not allowed to access this site.<br/>
+                  To allow your IP, please contact our team and follow the DNS configuration instructions to get <br/>the activation code.
                 </p>
                 <Button
                   className="mx-auto mt-6 text-lg"
