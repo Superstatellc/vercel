@@ -39,7 +39,7 @@ const App = () => {
           <div
             aria-labelledby="activation-dialog-title"
             aria-modal="true"
-            className="relative flex h-[300px] w-[450px] max-w-[calc(100vw-2rem)] flex-col justify-center bg-white p-6 text-center shadow-xl dark:bg-gray-800"
+            className="relative flex h-[350px] w-[480px] max-w-[calc(100vw-2rem)] flex-col justify-center bg-white p-6 text-center shadow-xl dark:bg-gray-800"
             role="dialog"
           >
             {showActivation ? (
@@ -59,10 +59,10 @@ const App = () => {
                 >
                   Activate your connection
                 </h1>
-                <p className="mt-2 text-base text-gray-500 dark:text-gray-400" style={{textAlilgn: 'left'}}>
+                <p className="mt-2 text-base text-gray-500 dark:text-gray-400" style={{textAlign: 'left'}}>
                   Enter the activation code issued to you by following DNS configuration instructions.
                 </p>
-                <p className="mt-2 text-base text-gray-500 dark:text-gray-400" style={{textAlilgn: 'left'}}>
+                <p className="mt-2 text-base text-gray-500 dark:text-gray-400" style={{textAlign: 'left'}}>
                   Your temporary session provides:<br/>
                   ✓ Product environment only<br/>
                   ✓ 60-minute access<br/>
@@ -99,10 +99,12 @@ const App = () => {
                 >
                   Restricted access
                 </h1>
-                <p className="mt-3 text-base text-gray-500 leading-6 dark:text-gray-400" style={{textAlilgn: 'left'}}>
+                <br />
+                <p className="mt-3 text-base text-gray-500 leading-6 dark:text-gray-400" style={{textAlign: 'left'}}>
                   Your IP is not allowed to access this site.<br/>
                   To allow your IP, please contact our team and follow the DNS configuration instructions to get the activation code.
                 </p>
+                <br />
                 <Button
                   className="mx-auto mt-6 text-lg"
                   onClick={() => setShowActivation(true)}
