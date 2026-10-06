@@ -65,7 +65,7 @@ const App = () => {
                 <p className="mt-2 text-base text-gray-500 dark:text-gray-400" style={{textAlign: 'left'}}>
                   Your temporary session provides:<br/>
                   ✓ Product environment only<br/>
-                  ✓ 60-minute access<br/>
+                  ✓ 7-days access<br/>
                   ✓ Automatic expiration
                 </p>
                 <form
