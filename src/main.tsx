@@ -57,18 +57,24 @@ const App = () => {
                   className="font-semibold text-[22px]"
                   id="activation-dialog-title"
                 >
-                  Activate your IP
+                  Activate your connection
                 </h1>
-                <p className="mt-2 text-base text-gray-500 dark:text-gray-400">
-                  Enter the activation code issued to you by <br/>the administrator.
+                <p className="mt-2 text-base text-gray-500 dark:text-gray-400" style={{textAlilgn: 'left'}}>
+                  Enter the activation code issued to you by following DNS configuration instructions.
+                </p>
+                <p className="mt-2 text-base text-gray-500 dark:text-gray-400" style={{textAlilgn: 'left'}}>
+                  Your temporary session provides:<br/>
+                  ✓ Product environment only<br/>
+                  ✓ 60-minute access<br/>
+                  ✓ Automatic expiration
                 </p>
                 <form
                   className="mt-6 flex flex-col gap-4 text-left"
                   onSubmit={handleActivation}
                 >
                   <Input
-                    aria-label="Activation code"
-                    label="Activation code"
+                    aria-label=""
+                    label=""
                     onChange={(event) => setActivationCode(event.target.value)}
                     placeholder="Enter the code"
                     required
@@ -93,9 +99,9 @@ const App = () => {
                 >
                   Restricted access
                 </h1>
-                <p className="mt-3 text-base text-gray-500 leading-6 dark:text-gray-400">
+                <p className="mt-3 text-base text-gray-500 leading-6 dark:text-gray-400" style={{textAlilgn: 'left'}}>
                   Your IP is not allowed to access this site.<br/>
-                  To allow your IP, please contact our team and follow the DNS configuration instructions to get <br/>the activation code.
+                  To allow your IP, please contact our team and follow the DNS configuration instructions to get the activation code.
                 </p>
                 <Button
                   className="mx-auto mt-6 text-lg"
