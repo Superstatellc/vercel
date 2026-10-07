@@ -6,7 +6,7 @@ import {
   CommandLineIcon,
   ExclamationTriangleIcon
 } from "@heroicons/react/24/outline";
-import { type FormEvent, StrictMode, useState } from "react";
+import { type FormEvent, StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import Providers from "@/components/Common/Providers";
 import { Button, Input } from "@/components/Shared/UI";
@@ -46,6 +46,22 @@ const App = () => {
     "restricted" | "instructions" | "activation"
   >("restricted");
   const [activationCode, setActivationCode] = useState("");
+
+  useEffect(() => {
+    if (!showActivationModal) return;
+
+    const root = document.documentElement;
+    const previousRootOverflow = root.style.overflow;
+    const previousBodyOverflow = document.body.style.overflow;
+
+    root.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      root.style.overflow = previousRootOverflow;
+      document.body.style.overflow = previousBodyOverflow;
+    };
+  }, [showActivationModal]);
 
   const handleActivation = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
